@@ -2,10 +2,52 @@
 /*Importing Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+/*Variables*/
+:root {
+    --light-blue: #5b88d8;
+    --header-bg: #47518a;
+    --dark-blue: #070f26;
+    --header-bg-rgba: rgba(71, 81, 138, .6);
+    --light-blue-rgba: rgba(91, 136, 216, .6);
+}
+
 /*Global Styles*/
+button {cursor: pointer;}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
     font-family: 'Poppins', sans-serif;
 }
+
+/*Styles*/
+.w-100 {width: 100%;}
+.w-50 {width: 50%;}
+.d-flex {display: flex;}
+.d-inline-flex {display: inline-flex;}
+.jc-center {justify-content: center;}
+.jc-end {justify-content: end;}
+.ai-center {align-items: center;}
+.jc-sb {justify-content: space-between;}
+.p-1 {padding: 1rem;}
+.c-white {color: white;}
+.c-light-blue {color: var(--light-blue);}
+.header-bg {background: linear-gradient(to bottom, var(--light-blue-rgba), var(--header-bg-rgba));}
+.bg-dark-blue {background-color: var(--dark-blue);}
+.mr-dot-5 {margin-right: .5rem;}
+.mr-1 {margin-right: 1rem;}
+.bg-none {background-color: unset;}
+.b-none {border: none;}
+.c-dark-blue {color: var(--dark-blue);}
+.c-light-white {color: #e7e7e7;}
+.bg-light-blue {background: var(--light-blue);}
+.bg-light-blue-rgba {background: var(--light-blue-rgba);}
+.w-1 {width: 1rem;}
+.h-1 {height: 1rem;}
+.w-2 {width: 2rem;}
+.h-2 {height: 2rem;}
+.circle {border-radius: 100%;}
+.fw-normal {font-weight: normal;}
+.mr-3 {margin-right: 3rem;}
