@@ -80,3 +80,7 @@ button {cursor: pointer;}
 .b-1-light-white {border: 1px solid rgba(231, 231, 231, 0.5);}
 .c-lighter-light {color: rgba(231, 231, 231, 0.5);}
 .mb-1 {margin-bottom: 1rem;}
+.list-unstyled {list-style: none;}
+.slider {height: 2px;}
+.mb-dot-5 {margin-bottom: .5rem;}
+.bg-pink {background-color: #ed9fee;}

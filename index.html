@@ -83,68 +83,87 @@
             </div>
         </section>
         <!--Bottom Side Of Main Section Of Page-->
-        <section class="grid-parent-2 p-1">
-            <!--Sales Part-->
-            <div class="bg-light-blue-rgba p-1 rounded">
-                <div class="d-inline-flex w-100 jc-sb ai-center mb-1">
-                    <h5 class="c-white fw-normal">Sales</h5>
-                    <button class="w-20 d-inline-flex jc-sb rounded-10 p-dot-5 bg-none c-light-white b-1-light-white">
-                        <h5>Last 7 Days</h5>
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
+        <section class="p-1 d-inline-flex w-100">
+            <div class="mr-1 w-50">
+                <!--Sales Part-->
+                <div class="bg-light-blue-rgba p-1 rounded mb-1">
+                    <div class="d-inline-flex w-100 jc-sb ai-center mb-1">
+                        <h5 class="c-white fw-normal">Sales</h5>
+                        <button class="w-20 d-inline-flex jc-sb rounded-10 p-dot-5 bg-none c-light-white b-1-light-white">
+                            <h5>Last 7 Days</h5>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="d-inline-flex w-100 jc-sb ai-center c-lighter-light mb-1">
+                        <h4 class="fw-normal">6 items</h4>
+                        <h5 class="fw-normal">11 May 2021 - 18 May 2021</h5>
+                    </div>
+                    <canvas id="myChart1" width="400" height="200"></canvas>
                 </div>
-                <div class="d-inline-flex w-100 jc-sb ai-center c-lighter-light mb-1">
-                    <h4 class="fw-normal">6 items</h4>
-                    <h5 class="fw-normal">11 May 2021 - 18 May 2021</h5>
+                <!--Revenue Part-->
+                <div class="bg-light-blue-rgba p-1 rounded">
+                    <div class="d-inline-flex w-100 jc-sb ai-center mb-1">
+                        <h5 class="c-white fw-normal">Revenue</h5>
+                        <button class="w-20 d-inline-flex jc-sb rounded-10 p-dot-5 bg-none c-light-white b-1-light-white">
+                            <h5>Last 7 Days</h5>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="d-inline-flex w-100 jc-sb ai-center c-lighter-light mb-1">
+                        <h4>&euro;100</h4>
+                        <h5>11 May 2021 - 18 May 2021</h5>
+                    </div>
+                    <canvas id="myChart2" width="400" height="200"></canvas>
                 </div>
-                <canvas id="myChart1" width="400" height="200"></canvas>
             </div>
             <!--Tasks Part-->
-            <div>
-                <div>
-                    <h5>Running Tasks</h5>
-                    <button>
-                        <h5>All Tasks</h5>
+            <div class="bg-light-blue-rgba p-1 w-50 rounded">
+                <div class="d-inline-flex w-100 jc-sb ai-center mb-1 c-light-white">
+                    <h5 class="fw-normal">Running Tasks</h5>
+                    <button class="w-20 d-inline-flex ai-center jc-sb rounded-10 p-dot-5 bg-none c-light-white b-1-light-white">
+                        <h5 class="fw-normal">All Tasks</h5>
                         <i class="bi bi-chevron-down"></i>
                     </button>
                 </div>
                 <!--List Of Tasks-->
-                <ul>
-                    <li>
-                        <div>
+                <ul class="list-unstyled">
+                    <li class="mb-1">
+                        <div class="card-bg p-1 rounded">
                             <!--Top Side Of Tasks No.1-->
-                            <div>
-                                <div>
-                                    <div><i class="bi bi-person-plus"></i></div>
-                                    <h5>Auto Following</h5>
+                            <div class="w-100 d-inline-flex jc-sb ai-center mb-dot-5">
+                                <div class="w-50 d-inline-flex ai-center">
+                                    <div class="w-3 h-3 rounded card-icons-bg c-orange mr-dot-5 d-flex jc-center ai-center"><i class="bi bi-person-plus"></i></div>
+                                    <h5 class="fw-normal c-light-white">Auto Following</h5>
                                 </div>
-                                <div>
-                                    <h6>Completing</h6>
-                                    <h5>74%</h5>
-                                    <button><i class="bi bi-three-dots"></i></button>
+                                <div class="w-50 ai-center d-inline-flex jc-end">
+                                    <h6 class="c-lighter-light fw-normal mr-dot-5">Completing</h6>
+                                    <h5 class="c-light-white fw-normal mr-dot-5">74%</h5>
+                                    <button class="bg-none w-2 h-2 b-none c-white"><i class="bi bi-three-dots"></i></button>
                                 </div>
                             </div>
                             <!--The Slider-->
-                            <div></div>
+                            <div class="w-100 slider bg-dark-blue mb-dot-5">
+                                <div class="slider w-50 bg-light-blue"></div>
+                            </div>
                             <!--Bottom Side-->
-                            <div>
-                                <div>
+                            <div class="d-inline-flex w-100 jc-sb">
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Company's Name</h6>
                                     <h5>My Company 01</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Followers</h6>
                                     <h5>123</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Numbers Statue</h6>
                                     <h5>12</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Earned</h6>
                                     <h5>&dollar;2367</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Date</h6>
                                     <h5>12/04</h5>
                                 </div>
@@ -152,38 +171,40 @@
                         </div>
                     </li>
                     <!--List No.2-->
-                    <li>
-                        <div>
-                            <div>
-                                <div>
-                                    <div><i class="bi bi-chat-dots"></i></div>
-                                    <h5>Boost Comments</h5>
+                    <li class="mb-1">
+                        <div class="card-bg p-1 rounded">
+                            <div class="w-100 d-inline-flex jc-sb ai-center mb-dot-5">
+                                <div class="w-50 d-inline-flex ai-center">
+                                    <div class="w-3 h-3 rounded card-icons-bg c-light-blue mr-dot-5 d-flex jc-center ai-center"><i class="bi bi-chat-dots"></i></div>
+                                    <h5 class="fw-normal c-light-white">Boost Comments</h5>
                                 </div>
-                                <div>
-                                    <h6>Completing</h6>
-                                    <h5>14%</h5>
-                                    <button><i class="bi bi-three-dots"></i></button>
+                                <div class="w-50 ai-center d-inline-flex jc-end">
+                                    <h6 class="c-lighter-light fw-normal mr-dot-5">Completing</h6>
+                                    <h5 class="c-light-white fw-normal mr-dot-5">14%</h5>
+                                    <button class="bg-none w-2 h-2 b-none c-white"><i class="bi bi-three-dots"></i></button>
                                 </div>
                             </div>
-                            <div></div>
-                            <div>
-                                <div>
+                            <div class="w-100 slider bg-dark-blue mb-dot-5">
+                                <div class="slider w-50 bg-light-blue"></div>
+                            </div>
+                            <div class="d-inline-flex w-100 jc-sb">
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Company's Name</h6>
                                     <h5>My Company 02</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Followers</h6>
                                     <h5>18</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Numbers Statue</h6>
                                     <h5>0</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Earned</h6>
                                     <h5>&dollar;0</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Date</h6>
                                     <h5>12/04</h5>
                                 </div>
@@ -192,36 +213,38 @@
                     </li>
                     <!--List No.3-->
                     <li>
-                        <div>
-                            <div>
-                                <div>
-                                    <div><i class="bi bi-heart"></i></div>
-                                    <h5>Auto Following</h5>
+                        <div class="card-bg p-1 rounded">
+                            <div class="w-100 d-inline-flex jc-sb ai-center mb-dot-5">
+                                <div class="w-50 d-inline-flex ai-center">
+                                    <div class="w-3 h-3 rounded card-icons-bg c-pink mr-dot-5 d-flex jc-center ai-center"><i class="bi bi-heart"></i></div>
+                                    <h5 class="fw-normal c-light-white">Auto Following</h5>
                                 </div>
-                                <div>
-                                    <h6>Completed</h6>
-                                    <button><i class="bi bi-three-dots"></i></button>
+                                <div class="w-50 ai-center d-inline-flex jc-end">
+                                    <h6 class="c-lighter-light fw-normal mr-dot-5">Completed</h6>
+                                    <button class="bg-none w-2 h-2 b-none c-white"><i class="bi bi-three-dots"></i></button>
                                 </div>
                             </div>
-                            <div></div>
-                            <div>
-                                <div>
+                            <div class="w-100 slider bg-dark-blue mb-dot-5">
+                                <div class="slider w-50 bg-pink"></div>
+                            </div>
+                            <div class="d-inline-flex w-100 jc-sb">
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Company's Name</h6>
                                     <h5>My Company 03</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Followers</h6>
                                     <h5>123</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Numbers Statue</h6>
                                     <h5>12</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Earned</h6>
                                     <h5>&dollar;2367</h5>
                                 </div>
-                                <div>
+                                <div class="d-flex jc-center ai-center c-lighter-light flex-d-c">
                                     <h6>Date</h6>
                                     <h5>12/04</h5>
                                 </div>
@@ -229,21 +252,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-            <!--Revenue Part-->
-            <div class="bg-light-blue-rgba p-1 rounded">
-                <div class="d-inline-flex w-100 jc-sb ai-center mb-1">
-                    <h5 class="c-white fw-normal">Revenue</h5>
-                    <button class="w-20 d-inline-flex jc-sb rounded-10 p-dot-5 bg-none c-light-white b-1-light-white">
-                        <h5>Last 7 Days</h5>
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                </div>
-                <div class="d-inline-flex w-100 jc-sb ai-center c-lighter-light mb-1">
-                    <h4>&euro;100</h4>
-                    <h5>11 May 2021 - 18 May 2021</h5>
-                </div>
-                <canvas id="myChart2" width="400" height="200"></canvas>
             </div>
         </section>
     </main>
