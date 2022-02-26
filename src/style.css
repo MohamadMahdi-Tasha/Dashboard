@@ -74,3 +74,6 @@ button {cursor: pointer;}
 .c-light-blue {color: #4995ee;}
 .c-orange {color: #ef9c95;}
 .c-pink {color: #ed9fee;}
+.grid-parent-2 {display: grid;grid-template-columns: repeat(2, 1fr);}
+.gap-col-dot-5 {column-gap: .5rem;}
+.grid-row-2 {grid-row: span 2;}
