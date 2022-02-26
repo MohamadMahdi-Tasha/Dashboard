@@ -83,36 +83,21 @@
             </div>
         </section>
         <!--Bottom Side Of Main Section Of Page-->
-        <section class="grid-parent">
+        <section class="grid-parent-2 p-1">
             <!--Sales Part-->
-            <div>
-                <div>
-                    <h5>Sales</h5>
-                    <button>
+            <div class="bg-light-blue-rgba p-1 rounded">
+                <div class="d-inline-flex w-100 jc-sb ai-center mb-1">
+                    <h5 class="c-white fw-normal">Sales</h5>
+                    <button class="w-20 d-inline-flex jc-sb rounded-10 p-dot-5 bg-none c-light-white b-1-light-white">
                         <h5>Last 7 Days</h5>
                         <i class="bi bi-chevron-down"></i>
                     </button>
                 </div>
-                <div>
-                    <h5>6 items</h5>
-                    <h6>11 May 2021 - 18 May 2021</h6>
+                <div class="d-inline-flex w-100 jc-sb ai-center c-lighter-light mb-1">
+                    <h4 class="fw-normal">6 items</h4>
+                    <h5 class="fw-normal">11 May 2021 - 18 May 2021</h5>
                 </div>
-                <canvas id="myChart1" width="400" height="400"></canvas>
-            </div>
-            <!--Revenue Part-->
-            <div>
-                <div>
-                    <h5>Revenue</h5>
-                    <button>
-                        <h5>Last 7 Days</h5>
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                </div>
-                <div>
-                    <h5>&euro;100</h5>
-                    <h6>11 May 2021 - 18 May 2021</h6>
-                </div>
-                <canvas id="myChart2" width="400" height="400"></canvas>
+                <canvas id="myChart1" width="400" height="200"></canvas>
             </div>
             <!--Tasks Part-->
             <div>
@@ -245,15 +230,26 @@
                     </li>
                 </ul>
             </div>
+            <!--Revenue Part-->
+            <div class="bg-light-blue-rgba p-1 rounded">
+                <div class="d-inline-flex w-100 jc-sb ai-center mb-1">
+                    <h5 class="c-white fw-normal">Revenue</h5>
+                    <button class="w-20 d-inline-flex jc-sb rounded-10 p-dot-5 bg-none c-light-white b-1-light-white">
+                        <h5>Last 7 Days</h5>
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="d-inline-flex w-100 jc-sb ai-center c-lighter-light mb-1">
+                    <h4>&euro;100</h4>
+                    <h5>11 May 2021 - 18 May 2021</h5>
+                </div>
+                <canvas id="myChart2" width="400" height="200"></canvas>
+            </div>
         </section>
     </main>
     <!--Linking Chart Js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Chart Js Config-->
-    <script>
-        const ctx1 = document.getElementById('myChart1').getContext('2d');const myChart1 = new Chart(ctx1, {type: 'bar', data: {labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], datasets: [{label: '# of Votes', data: [12, 19, 3, 5, 2, 3], backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'], borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'], borderWidth: 1}]}, options: {scales: {y: {beginAtZero: true}}}});
-        const ctx2 = document.getElementById('myChart2').getContext('2d');const myChart2 = new Chart(ctx2, {type: 'bar', data: {labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], datasets: [{label: '# of Votes', data: [12, 19, 3, 5, 2, 3], backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'], borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'], borderWidth: 1}]}, options: {scales: {y: {beginAtZero: true}}}});
-        const ctx3 = document.getElementById('myChart3').getContext('2d');const myChart3 = new Chart(ctx3, {type: 'bar', data: {labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], datasets: [{label: '# of Votes', data: [12, 19, 3, 5, 2, 3], backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'], borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'], borderWidth: 1}]}, options: {scales: {y: {beginAtZero: true}}}});
-    </script>
+    <script>const ctx1 = document.getElementById('myChart1').getContext('2d');const myChart1 = new Chart(ctx1, {type: 'bar', data: {labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], datasets: [{label: '# of Votes', data: [12, 19, 3, 5, 2, 3], backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'], borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'], borderWidth: 1}]}, options: {scales: {y: {beginAtZero: true}}}});const ctx2 = document.getElementById('myChart2').getContext('2d');const myChart2 = new Chart(ctx2, {type: 'bar', data: {labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], datasets: [{label: '# of Votes', data: [12, 19, 3, 5, 2, 3], backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'], borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'], borderWidth: 1}]}, options: {scales: {y: {beginAtZero: true}}}});</script>
 </body>
 </html>
