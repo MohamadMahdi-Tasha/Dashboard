@@ -90,8 +90,6 @@ button {cursor: pointer;}
 .rounded-dot-5 {border-radius: .5rem;}
 .p-l-r-b-1 {padding: 0 1rem 1rem 1rem;}
 .transition-dot-5 {transition: .5s;}
-.hover-border-light-white {border: 1px solid transparent;}
-.hover-border-light-white:hover {border: 5px solid rgba(163, 163, 163, 0.5);}
 .h-1-dot-5 {height: 1.5rem;}
 .w-1-dot-5 {width: 1.5rem;}
 .w-25 {width: 25%;}
